@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Street Fighter II</title>
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+            }
+
+            body    {
+                display: flex;
+            }
+
+            body,
+            canvas{
+                background-color: black;
+            }
+
+            canvas{
+                width: 100%;
+                object-fit: contain;
+                image-rendering:  crisp-edges;
+                image-rendering:  pixelated;
+            }
+
+            img {
+                display: none;
+            }
+
+        </style>
+        <script type="module" src="./src/index.js"></script>
+    </head>
+    <body>
+        <!-- <form>
+            <div>
+                <input id="ken" type="checkbox" name="fighter" value="Ken" />
+                <label for="ken">Ken</label>
+            </div>
+            <div>
+                <input id="ryu" type="checkbox" name="fighter" value="Ryu" />
+                <label for="ryu">Ryu</label>
+            </div>
+            <select id="state-dropdown" name="state"></select>
+            <button type="submit">Transition!</button>
+        </form> -->
+            <canvas width ="384" height="224"></canvas>
+        <img src="./images/ken.png" alt="ken" />
+        <img src="./images/Shadow.png" alt="shadow" />
+        <img src="./images/background.png" alt="background" />
+        <img src="./images/ryu.png" alt="ryu" />
+    </body>
+</html>
